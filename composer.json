@@ -50,6 +50,10 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
         ]
+"post-install-cmd": [
+     "php artisan clear-compiled",
+     "chmod -R 777 public/"
+ ]
     },
     "config": {
         "preferred-install": "dist",
@@ -59,3 +63,4 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 }
+
